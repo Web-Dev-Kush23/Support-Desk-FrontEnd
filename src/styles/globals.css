@@ -1,0 +1,84 @@
+/* frontend/styles/globals.css */
+@import "tailwindcss";
+
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background: #abb334;
+  color: #242711;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+.ticketForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  min-height: 100vh; /* centers vertically */
+  width: 100%;
+  margin: 0 auto;
+  /* background-color: #299d41; optional light background */
+}
+
+.ticketForm .field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.ticketForm label {
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #111827; /* dark gray for readability */
+}
+
+.ticketForm input,
+.ticketForm select,
+.ticketForm textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.2s;
+}
+
+.ticketForm input:focus,
+.ticketForm select:focus,
+.ticketForm textarea:focus {
+  border-color: #2563eb; /* Tailwind blue-600 */
+  outline: none;
+}
+
+.ticketForm button {
+  width: 100%;
+  padding: 10px;
+  background-color: #2563eb;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.ticketForm button:hover {
+  background-color: #1d4ed8;
+}
+
+.ticketForm button:disabled {
+  background-color: #93c5fd;
+  cursor: not-allowed;
+}
