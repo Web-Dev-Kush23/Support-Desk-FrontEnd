@@ -1,36 +1,203 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Support Desk - XtendedSpace
 
-## Getting Started
+A modern and scalable **Support Desk Application** built with **Next.js** for managing customer support tickets, issue tracking, and user communication for the XtendedSpace ecosystem.
 
-First, run the development server:
+## 🚀 Features
+
+* 🔐 User Authentication & Authorization
+* 🎫 Create, Update & Manage Support Tickets
+* 📂 Ticket Categories & Status Management
+* 💬 Real-time Support Communication
+* 📊 Admin Dashboard & Analytics
+* 🔎 Search & Filter Tickets
+* 📱 Fully Responsive UI
+* ⚡ Fast Performance with Next.js
+* 🌙 Modern UI/UX Design
+* 🔔 Notifications & Updates
+* 🛠 API Integration Support
+
+## 🛠 Tech Stack
+
+### Frontend
+
+* ⚛️ Next.js
+* React.js
+* Tailwind CSS / SCSS
+* Axios
+* Context API / Redux (if used)
+
+### Backend
+
+* Node.js
+* Express.js
+
+### Database
+
+* PostgreSQL / MongoDB
+
+### Deployment
+
+* Vercel
+* Docker (Optional)
+
+## 📁 Project Structure
+
+```bash
+support-desk/
+│
+├── public/                # Static Assets
+├── src/
+│   ├── components/        # Reusable Components
+│   ├── pages/             # Next.js Pages
+│   ├── layouts/           # Layout Components
+│   ├── services/          # API Services
+│   ├── hooks/             # Custom Hooks
+│   ├── context/           # Context Providers
+│   ├── styles/            # Global Styles
+│   ├── utils/             # Utility Functions
+│   └── constants/         # App Constants
+│
+├── .env.local             # Environment Variables
+├── next.config.js
+├── package.json
+└── README.md
+```
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/your-username/support-desk.git
+```
+
+### 2️⃣ Navigate to Project Directory
+
+```bash
+cd support-desk
+```
+
+### 3️⃣ Install Dependencies
+
+```bash
+npm install
+```
+
+or
+
+```bash
+yarn install
+```
+
+## 🔑 Environment Variables
+
+Create a `.env.local` file in the root directory.
+
+```env
+NEXT_PUBLIC_API_URL=http://localhost:5000/api
+NEXT_PUBLIC_APP_NAME=SupportDesk
+JWT_SECRET=your_secret_key
+DATABASE_URL=your_database_url
+```
+
+## ▶️ Run Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Application will run on:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🏗 Build for Production
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+Start Production Server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📦 Available Scripts
 
-## Deploy on Vercel
+```bash
+npm run dev       # Start development server
+npm run build     # Build project
+npm start         # Start production server
+npm run lint      # Run ESLint
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📸 Screenshots
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Add screenshots of:
+
+* Dashboard
+* Ticket Management
+* Login/Register
+* Admin Panel
+
+## 🔐 Authentication
+
+The application supports:
+
+* JWT Authentication
+* Role-based Access
+* Protected Routes
+
+## 🌐 API Integration
+
+Example API Request:
+
+```javascript
+import axios from "axios";
+
+const API = axios.create({
+  baseURL: process.env.NEXT_PUBLIC_API_URL,
+});
+
+export default API;
+```
+
+## 🚀 Deployment
+
+### Deploy on Vercel
+
+Install Vercel CLI:
+
+```bash
+npm install -g vercel
+```
+
+Deploy:
+
+```bash
+vercel
+```
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
+5. Open a Pull Request
+
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+
+## 👨‍💻 Developed By
+
+Himanshu Kushwaha
+
+🌐 Visit: [XtendedSpace](https://www.xtendedspace.com?utm_source=chatgpt.com)
